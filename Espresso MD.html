@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script><!-- JavaScript Bundle with Popper -->
+    <link rel="stylesheet" href="style.css">
+    
+    
+    
+    
+        <title>CoffeeHouse</title>
+        <link rel="icon" type="image/x-icon" href="Group 41.png">
+    
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap" rel="stylesheet">
+    </head>
+<body>
+    <nav class="navbar bg-white py-4" id="nav-1">
+        <div class="container-fluid">
+          <a href="index.html" class="navbar-brand"><img src="CoffeeHouse logo.1.png" alt="Logo" id="logo" /></a>
+          <form class="d-flex" role="search">
+            <input class="form-control me-2" type="search" placeholder="Search..." aria-label="Search">
+          </form>
+        </div>
+      </nav>
+      <nav class="navbar navbar-expand-lg bg-white">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#"></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse d-flex justify-content-center" id="navbarNavAltMarkup">
+            <div class="navbar-nav " id="nav-menu">
+              <a class="nav-link active px-3" aria-current="page" href="index.html" id="home2">Home</a>
+              <a class="nav-link px-3" href="Menu.html" id="home1">Menu</a>
+              <a class="nav-link px-3" href="Reserve Table.html">Reserve Table</a>
+              <a class="nav-link px-3" href="Sourcing.html" >Sourcing</a>
+              <a class="nav-link px-3" href="About us.html" >About Us</a>
+              <a class="nav-link px-3" href="Contact Us.html">Contact Us</a>
+              <a class="nav-link px-3" href="#"><img src="icons8-shopping-cart-96.png" alt="Cart" id="Cart" /></a>
+              <a class="nav-link px-3" href="#"><img src="icons8-male-user-96.png" alt="Account" id="Account" /></a>
+            </div>
+          </div>
+        </div>
+      </nav>
+
+      <div>
+        <nav>
+          <ol class="breadcrumb">
+            <li><a href="Menu.html" style="text-decoration:none; color:#a8ddd4">Menu</a></li>
+            <li style="color:#a8ddd4; margin-right: -200px;">/</li>
+            <li><a href="Menu.html" style="text-decoration:none; color:#a8ddd4">Coffee</a></li>
+            <li style="color:#a8ddd4;">/</li>
+            <li style="color:#358073; font-family: avenir light;">Espresso</li>
+          </ol>
+        </nav>
+      </div>
+
+      <div class="d-flex" style="margin-top: 20px; margin-bottom: 60px;">
+        <div>
+          <img src="Espressofull.gif"  alt="Espresso"  width="640px" height="580px" style="border-radius:0px; margin-left: 180px; border: 1px solid #0bd3b1;">
+      </div>
+      <div style="margin-left: 70px;">
+        <p style="color:#666868; font-family: avenir light; font-size: 34px;  margin-top: -5px;">Espresso</p>
+        <div style="display:flex;">
+        <p style="color:#666868; font-family: avenir light; font-size: 22px; margin-right: 10px;"><del>₹170</del></p>
+        <p style="color:#666868; font-family: avenir light; font-size: 22px; margin-right: 10px;">₹119</p>
+        </div>
+        
+        <p style="color:#358073; font-family: avenir light; font-size: 16px; margin-top: 10px;">Size</p>
+        <select id="size" style="width: 340px; height: 40px; margin-top: -10px; border-radius: 0px;">
+          <option value="Small">Small</option>
+          <option value="Medium">Medium</option>
+          <option value="Large">Large</option>
+        </select>
+
+        
+        <p style="color:#358073; font-family: avenir light; font-size: 16px; margin-top: 30px;">Flavour</p>
+        <select id="flavour" style="width: 340px; height: 40px; margin-top: -10px; border-radius: 0px;">
+          <option value="Honey">Honey</option>
+          <option value="Charamel">Charamel</option>
+          <option value="Toffee">Toffee</option>
+          <option value="Chocolate">Chocolate</option>
+        </select>
+
+
+        <p style="color:#358073; font-family: avenir light; font-size: 16px; margin-top: 30px;">Quantity</p>
+        <input type="number" id="quantity" name="quantity" placeholder="1" min="1" style="width: 90px; height: 40px; margin-top: -10px; border-radius: 0px;">
+
+        <input type="submit" value="Add to Cart" id="add_to_cart" style="display: block; margin-top: 40px; width: 340px; height: 40px; border-radius: 0px; border: 0px;">
+      </div>
+      </div>
+      
+    
+</body>
+</html>

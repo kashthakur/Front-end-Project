@@ -1,0 +1,338 @@
+<!Doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+  <!-- CSS only -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+  <!-- JavaScript Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+    crossorigin="anonymous"></script><!-- JavaScript Bundle with Popper -->
+  <link rel="stylesheet" href="style.css">
+
+  <!-- JQuery -->
+  <script src="https://code.jquery.com/jquery-3.1.0.js"></script>
+
+
+  <title>CoffeeHouse</title>
+  <link rel="icon" type="image/x-icon" href="Group 41.png">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <script src="home.js"></script>
+
+  <!-- NAVIGATION BAR -->
+  <nav class="navbar bg-white py-4" id="nav-1">
+    <div class="container-fluid ">
+      <a href="index.html" class="navbar-brand"><img src="CoffeeHouse logo.1.png" alt="Logo" id="logo" /></a>
+      <form class="d-flex" role="search">
+        <input class="form-control me-2" type="search" placeholder="Search..." aria-label="Search">
+      </form>
+    </div>
+  </nav>
+
+  <nav class="navbar navbar-expand-lg bg-white">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#"></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+        aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse  justify-content-center" id="navbarNavAltMarkup">
+        <div class="navbar-nav" id="nav-menu">
+          <a class="nav-link active px-3" aria-current="page" href="index.html" id="home">Home</a>
+          <a class="nav-link px-3" href="Menu.html">Menu</a>
+          <a class="nav-link px-3" href="Reserve Table.html">Reserve Table</a>
+          <a class="nav-link px-3" href="Sourcing.html">Sourcing</a>
+          <a class="nav-link px-3" href="About us.html">About Us</a>
+          <a class="nav-link px-3" href="Contact Us.html">Contact Us</a>
+          <a class="nav-link px-3" href="#"><img src="icons8-shopping-cart-96.png" alt="Cart" id="Cart" /></a>
+          <a class="nav-link px-3" href="#"><img src="icons8-male-user-96.png" alt="Account" id="Account" /></a>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- PARALLAX VIDEO -->
+  <div class="ParallaxVideo">
+    <pre id="welcome">
+            WELCOME TO 
+            COFFEEHOUSE
+        </pre>
+    <video width="1440px" height="auto" id="videocoffee" autoplay muted loop>
+      <source src="Untitled design.mp4" type="video/mp4">
+    </video>
+  </div>
+
+  <div class="ParallaxContent">
+    <div class="container" style="background-color: #fff; color: #000;">
+      <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="false">
+        <div class="carousel-indicators icon-green" id="slider">
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0"
+            class="active slider_button" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" class="slider_button"
+            aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" class="slider_button"
+            aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+
+          <!-- REVIEWS -->
+          <div class="carousel-item active">
+            <img src="pearl.jpeg" class="d-block w-100 h-50" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <h5 class="name1">Pearl, Chef</h5>
+              <p class="name1" id="line">____</p>
+              <p class="quote1">“I can't imagine my life without coffee.”</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="kassh.jpg" class="d-block w-100 h-50" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <h5 class="name1">Kashish, Software Developer</h5>
+              <p class="name1" id="line">____</p>
+              <p class="quote1">“Visiting Coffee Store and working there is much
+                easier than work at home."</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="pratt.jpeg" class="d-block w-100 h-50" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <h5 class="name1">Pratham, Software Developer</h5>
+              <p class="name1" id="line">____</p>
+              <p class="quote1">"To do work till late night is impossible
+                without a cup of coffee.”</p>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev arrow" type="button" data-bs-target="#carouselExampleCaptions"
+          data-bs-slide="prev" id="arrow">
+          <span aria-hidden="true"><img src="icons8-back-48.png" alt="Previous"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next arrow" type="button" data-bs-target="#carouselExampleCaptions"
+          data-bs-slide="next">
+          <span id="next" aria-hidden="true"><img src="icons8-back-48.png" alt="Next"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+
+      <!-- SALE PART -->
+      <div id="Sale_Div">
+        <p id="Sale">- Winter Sale -</p>
+        <p id="Discount">Get 30% Off On Coffee</p>
+        <a href="Menu.html" class="shop_button shop_text" style="text-decoration: none;">Shop Now</a>
+      </div>
+
+      <!-- TOP PICKS -->
+      <div>
+        <div>
+          <p class="top_picks" id="top_text">Top Picks</p>
+          <a class="top_picks" id="top_button" href="Menu.html" style="text-decoration:none ;">Show More</a>
+        </div>
+
+        <div class="product">
+          <div class="pro1">
+              <div class="card" style="height:290px; border: 0px; border-radius: 0px; position:relative;">
+                  <div class="image1-wrapper">
+                    <div class="image1-wrapper">
+                      <img src="americano1.jpeg" id="pro_1" class="card-img-top image1" alt="Amerciano" height="480px"
+                        style="border-radius:0px;" onmouseover="onHover1();" onmouseout="offHover1();">
+                    </div>
+                  </div>
+                  
+                  <div class="overlay2">
+                    <a href="Americano Details.html" style="text-decoration:none; color:#000;">
+                      Quick View
+                    </a></div>
+                  <div class="trending">Trending</div>
+                  <div class="card-body">
+                    <h5 class="card-title" id="pname2">Americano</h5>
+                    <p class="card-text" id="wrong_rate2"><del>₹210</del></p>
+                    <p class="card-text" id="right_rate2">₹147</p>
+                  </div>
+                </div>
+               </div>
+
+
+          <div class="pro2">
+              <div class="card" style="height:290px; border: 0px; border-radius: 0px; position:relative;">
+                  <div class="image1-wrapper">
+                    <img src="Espressofull.gif" id="pro_2" class="card-img-top image1" alt="Espresso" height="220px"
+                    style="border-radius:0px;" onmouseover="onHover2();" onmouseout="offHover2();">
+                  </div>
+                  
+                  <div class="overlay">
+                    <a href="Espresso Details.html" style="text-decoration:none; color:#000;">
+                    Quick View</a></div>
+                  <div class="card-body">
+                    <h5 class="card-title" id="pname">Espresso</h5>
+                    <p class="card-text" id="wrong_rate"><del>₹170</del></p>
+                    <p class="card-text" id="right_rate">₹119</p>
+                  </div>
+                </div>
+          
+          </div>
+
+
+          <div class="pro3">
+              <div class="card" style="height:290px; border: 0px; border-radius: 0px; position:relative;">
+                  <div class="image1-wrapper">
+                    <img src="lattefull.jpeg" id="pro_3" class="card-img-top image1" alt="Latte" height="220px"
+                    style="border-radius:0px;" onmouseover="onHover3();" onmouseout="offHover3();">
+                  </div>
+                  
+                  <div class="overlay">
+                    <a href="Latte Details.html" style="text-decoration:none; color:#000;">
+                    Quick View</a></div>
+                  <div class="card-body">
+                    <h5 class="card-title" id="pname">Latte</h5>
+                    <p class="card-text" id="wrong_rate"><del>₹150</del></p>
+                    <p class="card-text" id="right_rate">₹105</p>
+                  </div>
+                </div>
+              
+          </div>
+
+
+          <div class="pro4">
+              <div class="card" style="height:290px; border: 0px; border-radius: 0px; position:relative;">
+                  <div class="image1-wrapper">
+                    <img src="cappuccinofull.jpeg" id="pro_4" class="card-img-top image1" alt="Cappuccino" height="220px"
+                    style="border-radius:0px;" onmouseover="onHover4();" onmouseout="offHover4();">
+                  </div>
+                  
+                  <div class="overlay">
+                    <a href="Cappuccino Details.html" style="text-decoration:none; color:#000;">
+                    Quick View</a></div>
+                  <div class="card-body">
+                    <h5 class="card-title" id="pname">Cappuccino</h5>
+                    <p class="card-text" id="wrong_rate"><del>₹181</del></p>
+                    <p class="card-text" id="right_rate">₹126.7</p>
+                  </div>
+                </div>
+          </div>
+          <div class="pro5">
+              <div class="card" style="height:290px; border: 0px; border-radius: 0px; position:relative;">
+                  <div class="image1-wrapper">
+                    <img src="black coffee 2.jpeg" id="pro_5" class="card-img-top image1" alt="Black Coffee" height="220px"
+                    style="border-radius:0px;" onmouseover="onHover5();" onmouseout="offHover5();">
+                  </div>
+                  
+                  <div class="overlay">
+                    <a href="Black Coffee Details.html" style="text-decoration:none; color:#000;">
+                    Quick View</a></div>
+                  <div class="card-body">
+                    <h5 class="card-title" id="pname">Black Coffee</h5>
+                    <p class="card-text" id="wrong_rate"><del>₹121</del></p>
+                    <p class="card-text" id="right_rate">₹84.7</p>
+                  </div>
+                </div>
+          </div>
+          </div>
+
+      </div>
+
+      <div>
+        <p id="open">OPENING HOURS</p>
+        <p id="visit">Come Visit!</p>
+        <p id="time">Monday - Friday: 5:00 am - 9:00 pm</p>
+        <p id="time">Saturday - Sunday: 7:00 am - 10:00 pm</p>
+      </div>
+
+
+      <div class="Gettoknow">
+        <p id="heading">Get to Know Us</p>
+        <p id="context">CoffeeHouse offers a unique coffee house environment unlike any other in Macon. We are not only a place to
+          drop in and get your morning cup of coffee (although you are more than welcome to do that), we are a place
+          where you can sit down and enjoy that tailor-made cup of coffee.</p>
+          <!-- <button>  -->
+            <a id="learn_button" href="About us.html" style="text-decoration:none ;" >Learn More</a>
+          <!-- </button> -->
+      </div>
+
+
+
+      <div class="aboutIndex">
+        <div id="Contactus">
+          <p style="font-size:40px ; font-weight: bold; padding-top: 125px;">CONTACT US</p>
+          <p style="font-size:15px ; margin-left: 65px; margin-right: 80px;">Lovely Professional University, Grand Trunk
+            Road, Phagwara, Punjab, India</p>
+          <p style="font-size:15px ; margin-top: 35px; margin-bottom: 35px;">erpratham2002@gmail.com</p>
+          <p style="font-size:15px">0123456789</p>
+        </div>
+        <div>
+          <img src="Indeximagecontactus.webp" alt="All Coffee Imgae" style="width: 650px;" height="500px">
+        </div>
+      </div>
+
+      <footer style="padding-top:60px;">
+        <p style="text-align:center;"><a href="mailto:erpratham2002@gmail.com" class="footer" id="footeremail" style="text-decoration: none;">erpratham2002@gmail.com</a></p>
+        <p class="footer" style=" text-align: center;">©2022 by CoffeeHouse</p>  
+      </footer>
+
+
+
+    </div>
+  </div>
+
+
+  <script>
+    // Product 1
+    function onHover1() {
+        $("#pro_1").attr('src', "americano2.jpeg")
+      }
+      function offHover1() {
+        $("#pro_1").attr('src', "americano1.jpeg")
+      }
+      // Product 2
+      function onHover2() {
+        $("#pro_2").attr('src', "espresso2.jpeg")
+      }
+      function offHover2() {
+        $("#pro_2").attr('src', "Espressofull.gif")
+      }
+  
+      //Product 3
+  
+      function onHover3() {
+        $("#pro_3").attr('src', "latte2.jpeg")
+      }
+      function offHover3() {
+        $("#pro_3").attr('src', "lattefull.jpeg")
+      }
+  
+      // Product 4
+      function onHover4() {
+        $("#pro_4").attr('src', "cappuccino2.jpeg")
+      }
+      function offHover4() {
+        $("#pro_4").attr('src', "cappuccinofull.jpeg")
+      }
+  
+      // Product 5
+      function onHover5() {
+        $("#pro_5").attr('src', "blackcoffeefull.jpeg")
+      }
+      function offHover5() {
+        $("#pro_5").attr('src', "black coffee 2.jpeg")
+      }
+
+  </script>
+
+
+
+
+</body>
+
+</html>
